@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.app-shell {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: #111827;
+    color: #f9fafb;
+    padding: 1.5rem 1rem;
+}
+
+.sidebar__brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.sidebar__link {
+    display: block;
+    color: #e5e7eb;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.sidebar__link.active,
+.sidebar__link:hover {
+    background: #374151;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.panel {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    max-width: 700px;
+}
+
+.panel h1 {
+    margin-top: 0;
+}

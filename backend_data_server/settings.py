@@ -132,7 +132,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+    ('css', BASE_DIR / 'css'),
+    ('js', BASE_DIR / 'js'),
+    ('img', BASE_DIR / 'img'),
+]
 STATIC_ROOT = BASE_DIR / 'assets'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 API_URL = 'https://jsonplaceholder.typicode.com/posts'
